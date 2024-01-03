@@ -53,6 +53,11 @@ header {
   margin-top: 10px;
 }
 
+.cards__container {
+  display: flex;
+  gap: 10px;
+}
+
 .card {
   position: relative;
   margin-top: 50px;
@@ -65,7 +70,6 @@ header {
 
 .card__img {
   display: block;
-  width: 100%;
   border-radius: 10px;
 }
 

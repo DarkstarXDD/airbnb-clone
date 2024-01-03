@@ -1,8 +1,24 @@
 import photoGrid from "../assets/photo-grid.png"
-import katieZaferes from "../assets/katie-zaferes.png"
+import cardData from "../data/data.js"
 import Card from "../components/Card"
 
 export default function Hero() {
+  const cards = cardData.map(function (currentCard) {
+    return (
+      <Card
+        key={currentCard.id}
+        img={currentCard.coverImg}
+        imgAlt={currentCard.coverImg.replace(".png", "")} // Removed the extension and used the img file name as the alt text.
+        status="ONLINE"
+        rating={currentCard.stats.rating}
+        ratingCount={currentCard.stats.reviewCount}
+        country={currentCard.location}
+        title={currentCard.title}
+        price={currentCard.price}
+      />
+    )
+  })
+
   return (
     <main className="hero">
       <img
@@ -20,16 +36,7 @@ export default function Hero() {
         without leaving home.
       </p>
 
-      <Card
-        img={katieZaferes}
-        imgAlt="Katie Zaferes"
-        status="SOLD OUT"
-        rating="5.0"
-        ratingCount={6}
-        country="USA"
-        title="Life lessons with Katie Zaferes"
-        price={136}
-      />
+      <div className="cards__container">{cards}</div>
     </main>
   )
 }
