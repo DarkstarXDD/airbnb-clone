@@ -9,12 +9,12 @@ export default function Hero() {
         key={currentCard.id}
         img={currentCard.coverImg}
         imgAlt={currentCard.coverImg.replace(".png", "")} // Removed the extension and used the img file name as the alt text.
-        status="ONLINE"
         rating={currentCard.stats.rating}
         ratingCount={currentCard.stats.reviewCount}
-        country={currentCard.location}
+        location={currentCard.location}
         title={currentCard.title}
         price={currentCard.price}
+        openSpots={currentCard.openSpots}
       />
     )
   })
