@@ -1,14 +1,14 @@
-import airbnbLogo from "../assets/airbnb-logo.png"
+import airbnbLogo from "../assets/images/airbnb-logo.png"
 
 export default function Header() {
   return (
-    <header>
+    <header className="header flex-column">
       <img
         className="header__logo"
         src={airbnbLogo}
-        alt="airbnb logo"
-        width="82px"
-        height="25.35px"
+        alt="airbnb"
+        width="80"
+        height="24"
       />
     </header>
   )

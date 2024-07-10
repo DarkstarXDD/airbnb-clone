@@ -1,12 +1,11 @@
 import Header from "./components/Header"
-import Hero from "./components/Hero"
-import Card from "./components/Card"
+import Main from "./components/Main"
 
 export default function App() {
   return (
-    <div className="container">
+    <div className="wrapper">
       <Header />
-      <Hero />
+      <Main />
     </div>
   )
 }
