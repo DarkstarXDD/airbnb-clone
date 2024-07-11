@@ -3,7 +3,7 @@ import cardData from "../data/data.js"
 import Card from "./Card.jsx"
 
 export default function Main() {
-  const cards = cardData.map(function (currentCard) {
+  const cards = cardData.map((currentCard) => {
     return (
       <Card
         key={currentCard.id}
