@@ -1,4 +1,4 @@
-import photoGrid from "../assets/images/photo-grid.png"
+import photoGrid from "../assets/images/photo-grid.webp"
 import cardData from "../data/data.js"
 import Card from "./Card.jsx"
 
